@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {
+  useDemoData,
+  DataGrid,
   List,
   ListItem,
   ListItemText,
@@ -25,8 +27,11 @@ const ToDoList = () => {
     setInput(event.target.value);
   };
 
+
+
   return (
     <Stack direction="column" spacing={1}>
+      
       <TextField
         label="Ny oppgave"
         variant="outlined"
@@ -43,6 +48,19 @@ const ToDoList = () => {
           </ListItem>
         ))}
       </List>
+
+      
+      <Button color="secondary">Secondary</Button>
+      <Button variant="contained" color="success">
+        Success
+      </Button>
+      <Button variant="outlined" color="error">
+        Error
+      </Button>
+
+
+      
+    
     </Stack>
   );
 };
