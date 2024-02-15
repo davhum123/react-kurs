@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { Stack } from "@mui/material";
 import Description from "./components/Description";
 import ImageComponent from "./components/ImageComponent";
+import ToDoList from "./components/ToDoList";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Stack direction="column" spacing={2} mt={2}>
         <Description />
+        <ToDoList/>
         <ImageComponent />
       </Stack>
     </Container>
